@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="index.css">
-    <script src="index.js"></script>
+    <script defer src="index.js"></script>
     <title>Title</title>
 </head>
 <body>
@@ -11,6 +11,7 @@
     Тупиченко Милана Алексеевна
     <br>P3209  вариант 1975
 </header>
+
 <section id="data">
     <section class="input-container">
         <form id="user_input">
@@ -28,14 +29,14 @@
                 </section>
                 <section id="y-input">
                     <label for="y-label">Enter y coordinate:</label>
-                    <label for="y-input-field"></label><input id="y-input-field" type="number" placeholder="Enter num from -5 to 3">
+                    <label for="y-input-field"></label><input id="y-input-field" type="text" placeholder="Enter num from -5 to 3">
                     <br>
                     <span id="y-error" >Incorrect Y parameter</span>
 
                 </section>
                 <section id="r-input">
                     <label for="r-label">Enter R parameter:</label>
-                    <label for="r-input-field"></label><input id="r-input-field" type="number" placeholder='Enter num from 1 to 4'>
+                    <label for="r-input-field"></label><input id="r-input-field" type="text" placeholder='Enter num from 1 to 4'>
                     <br>
                     <span id="r-error" >Incorrect R parameter</span>
                 </section>
@@ -57,11 +58,13 @@
                 <label id="history-label">Arguments</label>
                 <label id="time-label">Time</label>
                 <label id="exTime-label">Execution time</label>
+                <label id="hitting-label">Hitting</label>
             </section>
         <section id="history-section">
             <div id="history"></div>
             <div id="time"></div>
             <div id="execution-time"></div>
+            <div id="hitting"></div>
         </section>
 
         </section>
